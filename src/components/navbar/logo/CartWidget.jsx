@@ -1,6 +1,7 @@
 import React from 'react'
 import { HiShoppingCart } from 'react-icons/hi'
 import './cartwidget.css'
+import '../style.css'
 
 
 
