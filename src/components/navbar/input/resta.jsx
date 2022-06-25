@@ -9,13 +9,13 @@ const Resta = () => {
     const [restar, setRestar] = useState(0);
 
     useEffect(() => {
-        setRestar(() => resta - 1);
+        setRestar(() => resta - resta);
     }, [resta]);
 
 
     return (
         <div>
-            {/* <button onClick={() => setResta((c) => resta - count)}>-</button>
+            {/* <button onClick={() => setResta((c) => count - resta)}>-</button>
 
             <p>{restar}</p> */}
         </div>

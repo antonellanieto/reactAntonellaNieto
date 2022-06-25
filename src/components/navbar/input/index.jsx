@@ -11,7 +11,7 @@ const Contador = () => {
   const [calculation, setCalculation] = useState(0);
 
   useEffect(() => {
-    setCalculation(() => count + 1);
+    setCalculation(() => count + count);
   }, [count]);
   
 
