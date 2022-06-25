@@ -16,7 +16,7 @@ const NavBar = () => {
       <li><a href="news.asp">Productos</a></li>
       <li><a href="contact.asp">Contacto</a></li>
       <li><a href="about.asp">Nostros</a></li>
-      <Input  valorInput={'Buscar'}/>
+      
       <CartWidget/>
   
     </ul>

@@ -1,15 +1,30 @@
 import React from 'react'
+import { useEffect } from 'react'
 import './styles.css'
+import { useState } from 'react'
 
-const Input = (props) => {
-    console.log(props)
+
+
+const Contador = () => {
+
+  const [count, setCount] = useState(0);
+  const [calculation, setCalculation] = useState(0);
+
+  useEffect(() => {
+    setCalculation(() => count + 1);
+  }, [count]);
+  
+
   return (
-    <input placeholder='' className='app-input'
-    value={props.valorInput}
-    
-    
-    />
+    <div>
+      <button onClick={() => setCount((c) => count + 1)}>+</button>
+
+      <p>{calculation}</p>
+   
+
+   </div>
   )
 }
 
-export default Input
+export default Contador
+export const count = true;

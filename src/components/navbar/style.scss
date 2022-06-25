@@ -5,6 +5,7 @@ ul {
   overflow: hidden;
   background-color: #333;
  height: 70px;
+
   
  
 }
@@ -22,11 +23,13 @@ li a {
   padding: 24px 16px;
   text-decoration: none;
   margin-left: 10px;
+
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
+  color: white;
 }
 
 .cartWidget{

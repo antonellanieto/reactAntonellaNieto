@@ -7,7 +7,7 @@ import ItemListContainer from './containers/ItemListContainer';
 
 function App() {
   return (
-    <div className='container'>
+    <div className=''>
        
     <NavBar/>
     <ItemListContainer/>
