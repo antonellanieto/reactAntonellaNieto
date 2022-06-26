@@ -5,21 +5,31 @@ import { useState } from 'react'
 
 
 
-const Contador = () => {
+const Contador = ({handleAdd, initial, stock}) => {
 
-  const [count, setCount] = useState(0);
-  const [calculation, setCalculation] = useState(0);
+  const [count, setCount] = useState(initial);
+  const onAdd = () => {
+    setCount(count + 1);
 
-  useEffect(() => {
-    setCalculation(() => count + count);
-  }, [count]);
-  
+  }
+  const onDecrement = () => {
+    if (count > 0){
+      setCount(count - 1);
+    }
+
+  }
+
 
   return (
     <div>
-      <button onClick={() => setCount((c) => count + 1)}>+</button>
+      <button onClick={onAdd}>+</button>
+      <button onClick={onDecrement}>-</button>
+      <p>{count}</p>
+      <button onClick={handleAdd}> Agregar al carrito</button>
+      
 
-      <p>{calculation}</p>
+
+  
    
 
    </div>
@@ -27,4 +37,3 @@ const Contador = () => {
 }
 
 export default Contador
-export const count = true;

@@ -12,13 +12,15 @@ import Contador from "../components/navbar/input";
 
 const ItemListContainer = () => {
 
-   
+   const handleAdd = () =>{
+    console.log("Se agregó al carrito");
+   }
     
     return (
         <div >
             <div className="container">
            <div className="row">
-            <Contador/>
+            <Contador handleAdd={handleAdd} initial={1} stock={10}/>
             <Resta/>
             <img src={ariel} alt="" className="imgOne col"/>
             <img src={stich} alt="" className="imgOne col"/> 
