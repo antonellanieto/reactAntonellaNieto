@@ -22,8 +22,8 @@ const Contador = ({handleAdd, initial, stock}) => {
 
   return (
     <div>
-      <button onClick={onAdd}>+</button>
-      <button onClick={onDecrement}>-</button>
+      <button onClick={onAdd} className="addButton">+</button>
+      <button onClick={onDecrement} className="decButton">-</button>
       <p>{count}</p>
       <button onClick={handleAdd}> Agregar al carrito</button>
       
