@@ -1,26 +1,35 @@
 .addButton {
   width: 32px;
   height: 28px;
-  background-color: black;
+  border: none;
+  margin-right: 2px;
+  background-color: #333;
   color: white;
 }
 
 .decButton {
   width: 32px;
   height: 28px;
-  background-color: black;
+  margin-right: 2px;
+  border: none;
+  background-color: #333;
   color: white;
 }
 
 .agregarCarrito {
-  width: 32px;
+  width: 172px;
   height: 28px;
-  background-color: black;
+  background-color: #333;
+  border: none;
   color: white;
 }
 
 p {
   float: right;
+}
+
+button:hover {
+  background-color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */
