@@ -1,0 +1,40 @@
+.addButton {
+  width: 32px;
+  height: 28px;
+  border: none;
+  margin-right: 2px;
+  background-color: #333;
+  color: white;
+}
+
+.decButton {
+  width: 32px;
+  height: 28px;
+  margin-right: 2px;
+  border: none;
+  background-color: #333;
+  color: white;
+}
+
+.agregarCarrito {
+  width: 172px;
+  height: 28px;
+  background-color: #333;
+  border: none;
+  color: white;
+  margin-top: 5px;
+}
+
+p {
+  float: right;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.Toastify__toast-theme--dark {
+  background-color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */

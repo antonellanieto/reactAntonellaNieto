@@ -1,0 +1,8 @@
+[
+    {"id":1,"nombre":"Ariel","precio":1500,"img":"https://http2.mlstatic.com/D_NQ_NP_790009-MLA43484087670_092020-O.jpg","cantidad":1},
+    {"id":2,"nombre":"Stitch","precio":670,"img":"https://http2.mlstatic.com/D_NQ_NP_837503-MLA41881819660_052020-O.webp","cantidad":1},
+    {"id":3,"nombre":"Pocahontas","precio":800,"img":"https://http2.mlstatic.com/D_NQ_NP_610866-MLA29014696750_122018-O.jpg","cantidad":1},
+    {"id":4,"nombre":"Lilo","precio":950,"img":"https://http2.mlstatic.com/D_NQ_NP_908428-MLA43871388903_102020-O.jpg","cantidad":1},
+    {"id":5,"nombre":"Jasmine","precio":5000,"img":"https://http2.mlstatic.com/D_NQ_NP_734490-MLA43475924088_092020-O.jpg","cantidad":1}
+ 
+]

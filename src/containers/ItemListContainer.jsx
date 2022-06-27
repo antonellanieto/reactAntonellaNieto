@@ -1,34 +1,46 @@
-import React from "react";
-import ariel from "../assets/ariel.jpg";
-import jasmine from "../assets/jasmine.jpg"
-import lilo from "../assets/lilo.jpg"
-import pocahontas from "../assets/pocahontas.jpg"
-import stich from "../assets/stich.webp"
+import React, { useState } from "react";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Resta from "../components/navbar/input/resta";
+
 import "./styles.css"
 import { useEffect } from "react";
-import Contador from "../components/navbar/input";
+import ItemList from "../components/ItemList";
+
 
 const ItemListContainer = () => {
+     
+    const [productos, setProductos] = useState(null);
+ 
+    useEffect( () =>{
+      const getProductos = async () =>{
+        try {
+            const response = await fetch('/mocks/data.json');
+            const data =  await response.json();
+            console.log(data);
+            setProductos(data);
+        }catch (error) {
+            console.log("hubo un error");
+           
+        }
+      }
+      getProductos();
+    }, []);
+
+    // console.log(producto)
+
 
    const handleAdd = () =>{
     console.log("Se agregó al carrito");
-   }
+   };
     
     return (
         <div >
-            <div className="container">
-           <div className="row">
-            <Contador handleAdd={handleAdd} initial={1} stock={10}/>
-            <Resta/>
-            <img src={ariel} alt="" className="imgOne col"/>
-            <img src={stich} alt="" className="imgOne col"/> 
-            <img src={pocahontas} alt="" className="imgOne col"/> 
-            <img src={lilo} alt="" className="imgOne col"/> 
-            <img src={jasmine} alt="" className="imgOne col"/>
-            </div>
-            </div>
+       
+
+            {productos ?
+            <ItemList products={productos}/>
+            :
+           null}
         </div>
     )
 

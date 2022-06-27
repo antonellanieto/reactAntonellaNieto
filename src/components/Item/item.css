@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+
+.card{
+    width: 18rem;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+
+   
+  
+   
+   
+}
+
+img{
+    width: 250px;
+    height: 170px;
+   
+    
+ 
+}

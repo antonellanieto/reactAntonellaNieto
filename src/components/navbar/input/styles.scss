@@ -3,6 +3,7 @@
     height: 28px;
    border:none;
    margin-right: 2px;
+
     background-color: #333;
     color: white;
   }
@@ -11,6 +12,7 @@
     height: 28px;
     margin-right: 2px;
     border:none;
+
   
     background-color: #333;
     color: white;
@@ -21,6 +23,7 @@
     background-color: #333;
     border:none;
     color: white;
+    margin-top: 5px;
   }
   
   p {
@@ -28,4 +31,7 @@
   }
   button:hover{
     background-color: black;
+  }
+  .Toastify__toast-theme--dark {
+    background-color: #333;
   }
