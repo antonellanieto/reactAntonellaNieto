@@ -4,16 +4,12 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
- height: 70px;
-
-  
- 
+  height: 70px;
 }
 
 li {
   float: left;
   margin-left: 70px;
-
 }
 
 li a {
@@ -23,7 +19,6 @@ li a {
   padding: 24px 16px;
   text-decoration: none;
   margin-left: 10px;
-
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -32,8 +27,10 @@ li a:hover {
   color: white;
 }
 
-.cartWidget{
-     width: 150px;
-     height: 150px;
-     margin-top: 20px;
+.cartWidget {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
 }
+
+/*# sourceMappingURL=styke%20css.map */

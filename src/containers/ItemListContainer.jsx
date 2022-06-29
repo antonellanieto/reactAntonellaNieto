@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import "./styles.css"
 import { useEffect } from "react";
 import ItemList from "../components/ItemList";
@@ -14,7 +12,7 @@ const ItemListContainer = () => {
     useEffect( () =>{
       const getProductos = async () =>{
         try {
-            const response = await fetch('/mocks/data.json');
+            const response = await fetch('https://fakestoreapi.com/products');
             const data =  await response.json();
             console.log(data);
             setProductos(data);
@@ -36,11 +34,11 @@ const ItemListContainer = () => {
     return (
         <div >
        
-
+{/* 
             {productos ?
             <ItemList products={productos}/>
             :
-           null}
+           null} */}
         </div>
     )
 

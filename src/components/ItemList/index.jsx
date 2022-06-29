@@ -1,15 +1,16 @@
 import React from 'react'
 import Item from '../Item/Item'
+import './itemList.css'
 
 const ItemList = ({products}) => {
     
   return (
-   <div>
+   <div className='d-flex flex-wrap justify-content-evenly contenedor'>
      
-     {products.map(producto => {
+     {/* {products.map(producto => {
               return <Item product={producto} key={producto.id}/>
      })}
-
+ */}
 
    </div>
   )
