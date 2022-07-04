@@ -5,12 +5,12 @@ import './itemList.css'
 const ItemList = ({products}) => {
     
   return (
-   <div className='d-flex flex-wrap justify-content-evenly contenedor'>
+   <div className='d-flex flex-wrap justify-content-around contenedor'>
      
-     {/* {products.map(producto => {
+     {products.map(producto => {
               return <Item product={producto} key={producto.id}/>
      })}
- */}
+
 
    </div>
   )

@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
+import Contador from '../button';
+
+
 
 const ItemDetail = ({product}) => {
     console.log(product);
   return (
     <div>
-         <div className='card'>
-            <div className='card-body'>
-                
-              <img src={product.image} alt="" />
-              <h4 className='card-title'>{product.title}</h4>
-              <h5 className='card-text'>{product.description}</h5>
-              <h5 className='card-text'>{product.price}</h5>
-
-            </div>
-            </div>
-    </div>
+    <div className='container'>
+      <h2>{product.id}</h2>
+      <h1>{product.name}</h1>
+      <img src={product.img} alt="product-detail"/>
+      <p>{product.description}</p>
+      <div><Contador/></div>
+  </div>
+</div>
   )
 }
 
-export default ItemDetail
+export default ItemDetail;

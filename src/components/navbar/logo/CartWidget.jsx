@@ -7,9 +7,9 @@ import '../style.css'
 
 export const CartWidget = () => {
   return (
-    <div className='cartWidget'>
+    
           <HiShoppingCart/>
-     </div>
+ 
   )
 }
 

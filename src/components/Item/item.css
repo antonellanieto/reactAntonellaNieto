@@ -6,6 +6,7 @@
     font-family: 'Titillium Web', sans-serif;
     text-align: center;
     margin-top: 25px;
+
  
 
    
@@ -13,7 +14,12 @@
    
    
 }
-
+.card-tilte{
+    max-height: 10rem;
+}
+.card-text{
+    max-height: 10rem;
+}
 img{
     width: 250px;
     height: 170px;

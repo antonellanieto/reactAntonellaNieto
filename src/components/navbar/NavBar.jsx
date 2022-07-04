@@ -1,8 +1,7 @@
 import React from "react";
-
 import './style.css';
 import CartWidget  from "./logo/CartWidget";
-
+import {Link} from 'react-router-dom';
 
 
 
@@ -10,17 +9,19 @@ import CartWidget  from "./logo/CartWidget";
 
 const NavBar = () => {
     return(
-      <ul>
+      <div className="container-fluid">
+      <ul className="row">
         
-      <li><a href="default.html">Home</a></li>
-      <li><a href="news.asp">Productos</a></li>
-      <li><a href="contact.asp">Contacto</a></li>
-      <li><a href="about.asp">Nostros</a></li>
+               <li className='nav-element col-2'><Link to='/'>Home</Link></li>
+                <li className='nav-element col-2'><Link to='/category/Disney'>Disney</Link></li>
+                <li className='nav-element col-2'><Link to='/category/DC'>D C</Link></li>
+                <li className="nav-element col-2"> <a href=""><CartWidget/></a></li>
+    
       
-      <CartWidget/>
+   
   
     </ul>
-    
+    </div>
     )
 }
 

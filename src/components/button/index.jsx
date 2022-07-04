@@ -21,15 +21,16 @@ const Contador = ({ handleAdd, initial, stock }) => {
     if (count > 0) {
       setCount(count - 1);
     }
-;
+
   }
 
  
   return (
-    <div>
+    <div className='d-flex flex-row mb-3'>
       <button onClick={onAdd} className="addButton">+</button>
-      <button onClick={onDecrement} className="decButton">-</button>
       <p>{count}</p>
+      <button onClick={onDecrement} className="decButton">-</button>
+    
       <button onClick={handleAdd} className="agregarCarrito"> Agregar al carrito</button>
 
 
