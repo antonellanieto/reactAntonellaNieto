@@ -9,29 +9,38 @@ import { useState } from 'react'
 
 
 
-const Contador = ({ handleAdd, initial, stock }) => {
+const Contador = ({ onConfirm, maxQuantity }) => {
 
-  const [count, setCount] = useState(initial);
+  const [value, setValue] = useState(1);
+
+  const handleConfirm = () => {
+      if (value <= maxQuantity) {
+          onConfirm(value)
+      }
+      else {
+          alert("Value > maxQuantity")
+      }
+  }
+  
   const onAdd = () => {
-    if (count < stock) {
-      setCount(count + 1);
+    if (value < maxQuantity) {
+      setValue(value + 1);
     }
   }
   const onDecrement = () => {
-    if (count > 0) {
-      setCount(count - 1);
+    if (value > 0) {
+      setValue(value - 1);
     }
-
   }
-
+  
  
   return (
     <div className='d-flex flex-row mb-3'>
       <button onClick={onAdd} className="addButton">+</button>
-      <p>{count}</p>
+      <p>{value}</p>
       <button onClick={onDecrement} className="decButton">-</button>
     
-      <button onClick={handleAdd} className="agregarCarrito"> Agregar al carrito</button>
+      <button onClick={handleConfirm} className="agregarCarrito"> Agregar al carrito</button>
 
 
 

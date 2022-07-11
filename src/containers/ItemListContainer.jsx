@@ -10,6 +10,7 @@ const ItemListContainer = () => {
 
   const [productos, setProductos] = useState([])
   const [productosFiltrados, setProductosFiltrados] = useState([])
+  const [modalVisible, setModalVisible] = useState(true)
 
   const params = useParams()
 

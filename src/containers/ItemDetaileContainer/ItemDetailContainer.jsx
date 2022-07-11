@@ -16,9 +16,9 @@ const ItemDetailContainer = () => {
   useEffect(()=> {
       const getProductos = async () => {
           try {
-              const response = await fetch(`https://run.mocky.io/v3/e146f2c3-449c-4f8a-ad6e-21c2274c2f19/${params.productoId}`)
-              const data = await response.json();
-              setProductDetail(data);
+            const response = await fetch('https://run.mocky.io/v3/e146f2c3-449c-4f8a-ad6e-21c2274c2f19/')
+            const data = await response.json();
+            setProductDetail(data.find(product => product.id === parseInt(params.productoId)));
           } catch (error) {
               console.log(error)
           }
