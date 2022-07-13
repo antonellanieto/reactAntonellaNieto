@@ -6,10 +6,12 @@ import ItemDetailContainer from './containers/ItemDetaileContainer/ItemDetailCon
 import ItemListContainer from './containers/ItemListContainer';
 import NotFound from './components/NotFound/NotFound';
 import Cart from './containers/Cart/cart';
+import ShopProvider from './context/ShopContext';
 
 
 function App() {
   return (
+    <ShopProvider>
     <BrowserRouter>
     
      <NavBar/>
@@ -22,6 +24,7 @@ function App() {
       
     </Routes>
      </BrowserRouter>  
+     </ShopProvider>
   );
 }
 
